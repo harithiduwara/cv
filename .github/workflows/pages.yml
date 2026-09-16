@@ -25,13 +25,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Compile cv.tex -> cv.pdf with a full TeX Live install
+      - name: Compile CV (LaTeX -> PDF)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Publish the repository root (index.html, styles.css, script.js, cv.tex)
+          # Publish the repo root, now including the freshly compiled cv.pdf
           path: "."
 
       - name: Deploy to GitHub Pages
