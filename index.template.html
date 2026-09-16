@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- GENERATED FILE — do not edit index.html by hand. Edit cv.tex (content) or index.template.html (chrome), then run build.py. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{NAME}} — Associate Lead SDET</title>
+  <meta name="description" content="{{NAME}} — Associate Lead SDET @ LSEG specializing in test automation, buy-side trading platforms, and data infrastructure." />
+  <meta name="author" content="{{NAME}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{NAME}} — Associate Lead SDET" />
+  <meta property="og:description" content="Associate Lead SDET @ LSEG specializing in test automation, buy-side trading platforms, and data infrastructure." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3E{{INITIALS}}%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">{{INITIALS}}<span>.</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Associate Lead SDET @ LSEG</p>
+          <h1 class="hero__name">{{NAME}}</h1>
+
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">View my work</a>
+            <a href="cv.pdf" class="btn btn--ghost" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV (PDF)
+            </a>
+          </div>
+
+          <div class="hero__socials">
+            {{SOCIALS}}
+          </div>
+        </div>
+
+        <div class="hero__card reveal">
+          <div class="avatar">
+            <img src="photo.png" alt="{{NAME}}" class="avatar__img" onerror="this.style.display='none'" />
+          </div>
+          <ul class="hero__facts">
+            <li><span>Role</span><strong>Associate Lead SDET</strong></li>
+            <li><span>Company</span><strong>LSEG</strong></li>
+            <li><span>Location</span><strong>Colombo, Sri Lanka</strong></li>
+            <li><span>Education</span><strong>BSc Computer Science, UCSC</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">01</span>
+          <h2>Experience</h2>
+        </header>
+        <div class="timeline">
+{{EXPERIENCE}}
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">02</span>
+          <h2>Technical Skills</h2>
+        </header>
+        <div class="skills">
+{{SKILLS}}
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">03</span>
+          <h2>Education</h2>
+        </header>
+        <div class="edu">
+{{EDUCATION}}
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">04</span>
+          <h2>Projects</h2>
+        </header>
+        <div class="projects">
+{{PROJECTS}}
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">05</span>
+          <h2>Achievements</h2>
+        </header>
+        <ul class="achievements">
+{{ACHIEVEMENTS}}
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="contact reveal">
+          <h2>Get in touch</h2>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+            <a class="btn btn--ghost" href="{{LINKEDIN}}" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          </div>
+          <div class="hero__socials contact__socials">
+            {{SOCIALS}}
+          </div>
+          <p class="contact__handles">WhatsApp <strong>{{WHATSAPP}}</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> {{NAME}}. Built with HTML &amp; CSS.</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

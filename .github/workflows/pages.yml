@@ -25,6 +25,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # cv.tex is the single source of truth -> generate the styled index.html
+      - name: Generate site from cv.tex
+        run: python build.py
+
       # Compile cv.tex -> cv.pdf with a full TeX Live install
       - name: Compile CV (LaTeX -> PDF)
         uses: xu-cheng/latex-action@v3
@@ -37,7 +46,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Publish the repo root, now including the freshly compiled cv.pdf
+          # Publish the repo root (generated index.html + compiled cv.pdf + assets)
           path: "."
 
       - name: Deploy to GitHub Pages

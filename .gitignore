@@ -1,0 +1,10 @@
+# index.html is generated from cv.tex by build.py (in CI) — do not commit it
+index.html
+
+# LaTeX build output
+cv.pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
